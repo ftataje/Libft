@@ -1,0 +1,23 @@
+•x isalpha
+•x isdigit
+•x isalnum
+•x isascii
+•x isprint
+•x strlen
+• memset
+• bzero
+• memcpy
+• memmove
+•x strlcpy
+•x strlcat
+• toupper
+• tolower
+• strchr
+• strrchr
+•x strncmp
+• memchr
+• memcmp
+• strnstr
+• atoi
+
+https://github.com/nmanzini/42-libft
