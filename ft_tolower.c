@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/03/30 16:44:12 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/03/30 16:53:11 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memset(void *str, int c, size_t len)
+int	ft_tolower(int c)
 {
-	unsigned char	*newstr;
-	int				i;
-
-	i = 0;
-	newstr = str;
-	while (i < len)
+	if (c > 64 && c < 91)
 	{
-		newstr[i] = (unsigned char)c;
-		i++;
+		return (c + 32);
 	}
-	return (newstr);
+	else
+		return (c);
 }
 
 int	main(void)
 {
-	char	str[] = "penelope";
+	int	a;
 
-	ft_memset(str + 3, '$', 4);
-	printf("%s\n", str);
-	memset(str + 3, '$', 4);
-	printf("%s\n", str);
+	a = 'E';
+	a = ft_tolower(a);
+	printf("%c\n", a);
+	return (0);
 }

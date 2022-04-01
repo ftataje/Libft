@@ -1,39 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/03/30 12:56:12 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/04/01 12:41:55 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memset(void *str, int c, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*newstr;
-	int				i;
+	char	*str2;
 
-	i = 0;
-	newstr = str;
-	while (i < len)
+	str2 = s;
+	while (n != 0)
 	{
-		newstr[i] = (unsigned char)c;
-		i++;
+		*str2++ = 0;
+		n--;
 	}
-	return (newstr);
 }
 
 int	main(void)
 {
-	char	str[] = "penelope";
+	char	str[] = "bitcoin";
+	int		n;
 
-	ft_memset(str + 3, '$', 4);
+	n = 2;
+	ft_bzero(str +2, n);
 	printf("%s\n", str);
-	memset(str + 3, '$', 4);
+	bzero(str + 2, n);
 	printf("%s\n", str);
 }

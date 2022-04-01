@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/03/31 10:27:17 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/03/31 16:40:13 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memset(void *str, int c, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	*newstr;
-	int				i;
-
-	i = 0;
-	newstr = str;
-	while (i < len)
-	{
-		newstr[i] = (unsigned char)c;
-		i++;
-	}
-	return (newstr);
+	while (*s != (char)c && *s != 0)
+		s++;
+	printf("s = %s\n", s);
+	if ((char)c == *s)
+		return ((char *)s);
+	return (0);
 }
 
 int	main(void)
 {
-	char	str[] = "penelope";
+	char	a[] = "HolaHolaXX";
+	char	*b	= NULL;
 
-	ft_memset(str + 3, '$', 4);
-	printf("%s\n", str);
-	memset(str + 3, '$', 4);
-	printf("%s\n", str);
+	b = ft_strchr(a, 'a');
+	printf("%s || %s", a, b);
+	return (0);
 }

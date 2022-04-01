@@ -4,20 +4,24 @@
 •x isascii
 •x isprint
 •x strlen
-• memset
-• bzero
-• memcpy
-• memmove
+•z memset
+•z bzero
+•x memcpy
+•x memmove
 •x strlcpy
 •x strlcat
-• toupper
-• tolower
-• strchr
-• strrchr
+•x toupper
+•x tolower
+•x strchr
+•x strrchr
 •x strncmp
-• memchr
-• memcmp
-• strnstr
-• atoi
+•x memchr
+•x memcmp
+•x strnstr
+•x atoi
+
+• calloc
+• strdup
 
 https://github.com/nmanzini/42-libft
+rm -r ~/Library/Caches/*; rm ~/.zcompdump

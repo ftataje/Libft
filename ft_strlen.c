@@ -6,11 +6,13 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 12:03:49 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/02/28 18:32:43 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/03/31 10:59:24 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <string.h>
+
+size_t	ft_strlen(const char *str)
 {
 	int	x;
 

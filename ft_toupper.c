@@ -1,39 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/03/30 16:28:49 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/03/30 16:39:02 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memset(void *str, int c, size_t len)
+int	ft_toupper(int c)
 {
-	unsigned char	*newstr;
-	int				i;
-
-	i = 0;
-	newstr = str;
-	while (i < len)
-	{
-		newstr[i] = (unsigned char)c;
-		i++;
-	}
-	return (newstr);
+	if (c > 96 && c < 123)
+		return (c - 32);
+	else
+		return (c);
 }
 
 int	main(void)
 {
-	char	str[] = "penelope";
+	int	a;
 
-	ft_memset(str + 3, '$', 4);
-	printf("%s\n", str);
-	memset(str + 3, '$', 4);
-	printf("%s\n", str);
+	a = 'e';
+	a = ft_toupper(a);
+	printf("%c\n", a);
+	return (0);
 }

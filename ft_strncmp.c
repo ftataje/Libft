@@ -6,11 +6,13 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 11:13:52 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/03 11:53:15 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/03/31 16:50:10 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include <string.h>
+
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
 	int	x;
 	int	dif;

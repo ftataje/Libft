@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/03/30 15:37:17 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/03/30 17:32:48 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memset(void *str, int c, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*newstr;
-	int				i;
+	char	*a;
+	char	*b;
 
-	i = 0;
-	newstr = str;
-	while (i < len)
+	a = (char *)src;
+	b = (char *)dst;
+	while (n--)
 	{
-		newstr[i] = (unsigned char)c;
-		i++;
+		*b++ = *a++;
 	}
-	return (newstr);
+	return (dst);
 }
 
 int	main(void)
 {
-	char	str[] = "penelope";
+	char	str1[] = "Bitcoinabcdef";
+	char	str2[] = "Ethereum";
 
-	ft_memset(str + 3, '$', 4);
-	printf("%s\n", str);
-	memset(str + 3, '$', 4);
-	printf("%s\n", str);
+	//ft_memcpy(str1, str2, 3);
+	memcpy(str1, str2, 3);
+	printf("%s\n", str1);
+	printf("%s\n", str2);
 }

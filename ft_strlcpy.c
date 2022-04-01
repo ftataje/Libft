@@ -6,28 +6,60 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 21:16:55 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/02 16:42:23 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/03/31 15:58:10 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int	counter;
-	unsigned int	i;
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
-	counter = 0;
+size_t	ft_strlen(const char *str)
+{
+	int	x;
+
+	x = 0;
+	while (str[x] != '\0')
+	{
+		x++;
+	}
+	return (x);
+}
+//Da el valor entero del tamaño del SRC, y el DEST toma los valores del SRC en n - 1 (porque considera el NULL de antemano)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+	size_t	i;
+	size_t	src_len;
+
 	i = 0;
-	while (src[counter] != '\0')
+	if (!dst || !src)
+		return (0);
+	src_len = ft_strlen(src);
+	if (!dstsize)
+		return (src_len);
+	while (src[i] != '\0' && i < dstsize - 1)
 	{
-		counter++;
+		dst[i] = src[i];
+		i++;
 	}
-	if (size != 0)
-	{
-		while (src[i] != '\0' && i < (size -1))
-		{
-			dest [i] = src [i];
-			i++;
-		}
-	}
-	return (counter);
+	if (dstsize < src_len)
+		dst[dstsize - 1] = '\0';
+	else if (dstsize != 0)
+		dst[i] = '\0';
+	return (src_len);
+}
+
+int	main(void)
+{
+	char	dest[] = "AAAA";
+	char	src[] = "BBBB";
+	int		n;
+	int		res;
+
+	n = 3;
+	printf("%s | %s\n", dest, src);
+	res = ft_strlcpy(dest, src, n);
+	//res = strlcpy(dest, src, n);
+	printf("%d\n", res);
+	printf("%s | %s", dest, src);
 }
