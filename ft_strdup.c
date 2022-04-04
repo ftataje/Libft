@@ -1,44 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 10:54:43 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:09:33 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/04/04 11:24:01 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/04/04 12:14:48 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 size_t	ft_strlen(const char *str);
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strdup(char *src)
 {
+	char	*new;
 	int		i;
-	char	*ptr;
 
 	i = 0;
-	ptr = 0;
-	while (s[i])
+	new = (char *)malloc(ft_strlen(src) + 1);
+	if (!new)
+		return (NULL);
+	while (*src)
 	{
-		if (s[i] == c)
-			ptr = (char *)(s + i);
-		i++;
+		new[i++] = *src++;
 	}
-	if (s[i] == c)
-		ptr = (char *)(s + i);
-	return (ptr);
+	new[i] = '\0';
+	free (new);
+	return (new);
 }
 
-/*int	main(void)
+int	main(void)
 {
-	char	a[] = "HolaHolaXX";
-	char	*b	= NULL;
+	char	*mine;
+	char	*theirs;
+	char	*example;
 
-	b = ft_strrchr(a, '+');
-	printf("%s || %s", a, b);
+	example = "hello";
+	mine = ft_strdup(example);
+	theirs = strdup(example);
+	printf(":%s:\n:%s:\n", mine, theirs);
 	return (0);
-}*/
+}
+
+//en una nueva variable retorna el mismo string

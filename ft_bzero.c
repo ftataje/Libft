@@ -6,26 +6,21 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 12:56:12 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/01 12:41:55 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:57:22 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
+void	*ft_memset(void *str, int c, size_t len);
+
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str2;
-
-	str2 = s;
-	while (n != 0)
-	{
-		*str2++ = 0;
-		n--;
-	}
+	ft_memset(s, '\0', n);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "bitcoin";
 	int		n;
@@ -35,4 +30,4 @@ int	main(void)
 	printf("%s\n", str);
 	bzero(str + 2, n);
 	printf("%s\n", str);
-}
+}*/

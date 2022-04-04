@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 15:17:23 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:57:47 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memset(void *str, int c, size_t len)
 	return (newstr);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "penelope";
 
@@ -36,4 +36,4 @@ int	main(void)
 	printf("%s\n", str);
 	memset(str + 3, '$', 4);
 	printf("%s\n", str);
-}
+}*/

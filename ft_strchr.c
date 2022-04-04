@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 10:27:17 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/31 16:40:13 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 11:48:15 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	a[] = "HolaHolaXX";
 	char	*b	= NULL;
@@ -31,4 +31,7 @@ int	main(void)
 	b = ft_strchr(a, 'a');
 	printf("%s || %s", a, b);
 	return (0);
-}
+}*/
+
+/*retorna el string desde el caracter que coincide con 'c' (si el c tiene
+varios caracteres solo considera el primero)*/
