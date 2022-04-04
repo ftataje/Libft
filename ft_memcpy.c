@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 15:37:17 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 17:32:48 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:17:23 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str1[] = "Bitcoinabcdef";
 	char	str2[] = "Ethereum";
@@ -36,4 +36,4 @@ int	main(void)
 	memcpy(str1, str2, 3);
 	printf("%s\n", str1);
 	printf("%s\n", str2);
-}
+}*/

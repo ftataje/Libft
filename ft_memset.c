@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:57:47 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:37:44 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_memset(void *str, int c, size_t len)
 {
 	unsigned char	*newstr;
-	int				i;
+	size_t			i;
 
 	i = 0;
 	newstr = str;

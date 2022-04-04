@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 16:50:38 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/31 17:31:45 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:19:42 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str1[] = "Bitcoinnnnnnnn";
 	char	*str2;
@@ -37,4 +37,4 @@ int	main(void)
 	str2 = ft_memchr(str1, 'o', 5);
 	printf("%s || %s", str1, str2);
 	return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:01:36 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/01 15:55:15 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:22:11 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void	ft_bzero(void *s, size_t n)
-{
-	char	*str2;
-
-	str2 = s;
-	while (n != 0)
-	{
-		*str2++ = 0;
-		n--;
-	}
-}
+void	ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -37,7 +27,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (rtn);
 }
 
-void	imprimirvector(int v[], int n)
+/*void	imprimirvector(int v[], int n)
 {
 	int	i;
 
@@ -61,4 +51,4 @@ int	main(void)
 	imprimirvector(p, n);
 	q = ft_calloc(n, sizeof(int));
 	imprimirvector(q, n);
-}
+}*/

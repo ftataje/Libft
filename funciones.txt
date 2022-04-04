@@ -24,4 +24,5 @@
 • strdup
 
 https://github.com/nmanzini/42-libft
+https://github.com/appinha/42cursus-00-Libft/tree/master/subm0
 rm -r ~/Library/Caches/*; rm ~/.zcompdump

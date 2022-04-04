@@ -1,37 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 17:44:17 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 15:45:37 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/04/04 16:47:04 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/04/04 17:19:10 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	ft_itoa(int n);
 {
-	size_t	i;
 
-	i = 0;
-	while (i < n)
-	{
-		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
-			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
-		i++;
-	}
-	return (0);
 }
-
-/*int	main(void)
-{
-	char	str1[] = "Bitcoin";
-	char	str2[] = "Ethereum";
-	int		res;
-
-	res = ft_memcmp(str1, str2, 3);
-	printf("%d", res);
-}*/

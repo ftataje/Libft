@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:27:04 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:11:37 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 16:21:21 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
-	printf("s1:%s\n", s1);
 	i = ft_strlen(s1);
-	printf("i:%zu\n", i);
 	while (i && ft_strchr(set, s1[i]))
 		i--;
-	printf("i:%zu\n", i);
 	return (ft_substr(s1, 0, i + 1));
 }
 
-int	main(void)
+/*int	main(void)
 {
-	char	a[] = "Bitcoin";
-	char	b[] = "in";
+	char	a[] = "niBitcoin";
+	char	b[] = "ni";
 	char	*res;
 
 	res = ft_strtrim(a, b);
 	printf("%s", res);
 	return (0);
-}
+}*/

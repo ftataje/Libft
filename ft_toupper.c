@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:28:49 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/03/30 16:39:02 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:47:51 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_toupper(int c)
 		return (c);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	a;
 
@@ -29,4 +29,4 @@ int	main(void)
 	a = ft_toupper(a);
 	printf("%c\n", a);
 	return (0);
-}
+} */

@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:24:01 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:14:48 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/04 12:44:19 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,10 @@ char	*ft_strdup(char *src)
 		new[i++] = *src++;
 	}
 	new[i] = '\0';
-	free (new);
 	return (new);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*mine;
 	char	*theirs;
@@ -45,6 +44,6 @@ int	main(void)
 	theirs = strdup(example);
 	printf(":%s:\n:%s:\n", mine, theirs);
 	return (0);
-}
+}*/
 
 //en una nueva variable retorna el mismo string
