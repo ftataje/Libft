@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 12:27:32 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 16:43:32 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/05 13:57:24 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ char	**ft_split(char const *s, char c)
 	size_t	end;
 	size_t	i;
 
-	if (!s || !c || !(split = (char **)malloc((count_words(s, c) + 1) * sizeof(char *))))
+	split = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!s || !c || !split)
 		return (0);
 	start = 0;
 	end = 0;
@@ -58,10 +59,14 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	char	a[] = "aaaaibbbb";
+	char	a[] = "abcdiefgh";
 
-	printf("%s", *ft_split(a, 'i'));
+	printf("%c\n", *ft_split(a, 'i')[0]);
+	printf("%c\n", *ft_split(a, 'i')[1]);
 	return (0);
-}
+}*/
+
+/*El count_words retorna el numero de partes que se puede dividir
+el string entre el caracter indicado como 'c'*/

@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 12:01:32 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 16:15:56 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/05 15:54:34 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,39 +14,42 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
-	size_t	len;
+	size_t	a;
+	size_t	b;
+	size_t	t;
 
-	len = 0;
-	while (dst[len] && len < dstsize)
-		len++;
-	i = len;
-	while (src[len - i] && len + 1 < dstsize)
+	t = 0;
+	a = ft_strlen(dst);
+	b = ft_strlen(src);
+	if (dstsize < a + 1)
 	{
-		dst[len] = src[len - i];
-		len++;
+		return (b + dstsize);
 	}
-	if (i < dstsize)
-		dst[len] = '\0';
-	return (i + ft_strlen(src));
+	while (a + t + 1 < dstsize && src[t] != '\0')
+	{
+		dst[a + t] = src[t];
+		t++;
+	}
+	dst[a + t] = '\0';
+	return (a + b);
 }
 
 /*int	main(void)
 {
-	char	dst[] = "mikel";
-	char	src[] = "ruiz";
+	char	dst[] = "AAA";
+	char	src[] = "BBBBBB";
 	int		n;
 	int		res;
 
-	n = 8;
+	n = 4;
 	printf("%s | %s\n", dst, src);
 	res = ft_strlcat(dst, src, n);
 	//res = strlcat(dst, src, n);
 	printf("%d\n", res);
 	printf("%s | %s\n", dst, src);
 	printf("n = %d\n", n);
-}
+}*/
 
-//Si n <= len(DEST) ==> retorna el numero de caracteres del SRC + n
+/*Si n <= len(DEST) ==> retorna el numero de caracteres del SRC + n
 Si n > len(DEST) la funcion original da ERROR, y la funcion creada
 da el len(DEST + SRC) y concatena los strs*/

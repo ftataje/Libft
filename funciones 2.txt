@@ -24,3 +24,5 @@ ft_lstclear
 ft_lstiter
 ft_lstmap
 
+rm -r ~/Library/Caches/*; rm ~/.zcompdump
+df -h
