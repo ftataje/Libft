@@ -6,8 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:37:41 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/08 13:37:48 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/11 13:44:28 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-FFF
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}

@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 12:01:32 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/05 15:54:34 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/11 12:00:04 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,21 +34,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (a + b);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	dst[] = "AAA";
 	char	src[] = "BBBBBB";
 	int		n;
 	int		res;
 
-	n = 4;
+	n = 6;
 	printf("%s | %s\n", dst, src);
 	res = ft_strlcat(dst, src, n);
 	//res = strlcat(dst, src, n);
 	printf("%d\n", res);
 	printf("%s | %s\n", dst, src);
 	printf("n = %d\n", n);
-}*/
+} */
 
 /*Si n <= len(DEST) ==> retorna el numero de caracteres del SRC + n
 Si n > len(DEST) la funcion original da ERROR, y la funcion creada
