@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/08 13:39:55 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/12 15:22:48 by ftataje-         ###   ########.fr       */
+/*   Created: 2022/04/08 13:40:30 by ftataje-          #+#    #+#             */
+/*   Updated: 2022/04/12 15:33:09 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
+	t_list	*aux;
+
 	if (!new)
 		return ;
-	if (!lst)
+	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
-	new->next = *lst;
-	*lst = new;
+	aux = ft_lstlast(*lst);
+	aux->next = new;
 }
 
 /* int	main(void)
@@ -32,14 +34,14 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	t_list	*p2;
 	t_list	*nbc;
 
-	nbc = ft_lstnew("Bitcoin ");
-	p = ft_lstnew("es ");
-	p1 = ft_lstnew("libertad ");
-	p2 = ft_lstnew("!");
+	nbc = ft_lstnew("(LAST)");
+	p = ft_lstnew("1 ");
+	p1 = ft_lstnew("2 ");
+	p2 = ft_lstnew("3 ");
 	p->next = p1;
 	p1->next = p2;
 	p2->next = NULL;
-	ft_lstadd_front(&p, nbc);
+	ft_lstadd_back(&p, nbc);
 	while (p)
 	{
 		printf("%s", p->content);
@@ -47,4 +49,9 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	}
 } */
 
-/*Adds the element ’new’ at the beginning of the list.*/
+/* lstadd_back will add the element 'new' (second argument) to the end of
+	 * (lst). *new is the address of a pointer to the element to be added to
+	 * the list. If there's nothing in lst, new will be assigned to it. Else,
+	 */
+
+/*Adds the element ’new’ at the end of the list.*/

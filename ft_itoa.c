@@ -6,54 +6,69 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:29:13 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/11 12:37:57 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/12 15:51:23 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-static	size_t	qty_dig(long int n)
+int	ft_intlen(int n)
 {
-	long int	dig;
+	int	n_len;
 
-	dig = 1;
-	while (n >= 10)
+	n_len = 0;
+	if (n == 0)
+		n_len++;
+	if (n < 0)
+	{
+		n *= -1;
+		n_len++;
+	}
+	while (n > 0)
 	{
 		n /= 10;
-		dig++;
+		n_len++;
 	}
-	return (dig);
+	return (n_len);
+}
+
+char	*ft_charconv(char *dest, int n, int n_len)
+{
+	if (n == 0)
+		*dest = 48;
+	if (n < 0)
+	{
+		*dest = 45;
+		n *= -1;
+	}
+	while (n > 0)
+	{
+		*(dest + n_len--) = 48 + (n % 10);
+		n /= 10;
+	}
+	return (dest);
 }
 
 char	*ft_itoa(int n)
 {
-	long int	auxnum;
-	int			len;
-	char		*res;
-	int			i;
+	char	*dest;
+	int		n_len;
 
-	auxnum = n;
-	if (n < 0)
-		auxnum = -n;
-	len = qty_dig(auxnum);
-	if (n < 0)
-		len = qty_dig(auxnum) + 1;
-	res = malloc(len + 1);
-	if (!res)
-		return (0);
-	res[len] = '\0';
-	i = len - 1;
-	while (i >= 0)
+	if (n == -2147483648)
 	{
-		res[i] = (auxnum % 10) + '0';
-		auxnum /= 10;
-		i--;
+		dest = (char *)malloc(sizeof(char) * 12);
+		if (!dest)
+			return (NULL);
+		ft_strlcpy(dest, "-2147483648", 12);
+		return (dest);
 	}
-	if (n < 0)
-		res[0] = '-';
-	return (res);
+	n_len = ft_intlen(n);
+	dest = (char *)malloc(sizeof(char) * n_len + 1);
+	if (!dest)
+		return (NULL);
+	*(dest + n_len--) = '\0';
+	dest = ft_charconv(dest, n, n_len);
+	return (dest);
 }
 
 /* int	main(void)

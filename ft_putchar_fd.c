@@ -6,9 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:37:41 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/11 13:44:28 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/12 12:56:07 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
