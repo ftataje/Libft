@@ -27,13 +27,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "Bitcoinabcdef";
 	char	str2[] = "Ethereum";
 
-	//ft_memcpy(str1, str2, 3);
-	memcpy(str1, str2, 3);
+	ft_memcpy(str1, str2, 3);
+	//memcpy(str1, str2, 3);
 	printf("%s\n", str1);
 	printf("%s\n", str2);
-}*/
+} */

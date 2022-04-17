@@ -20,14 +20,15 @@ void	ft_bzero(void *s, size_t n)
 	ft_memset(s, '\0', n);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	str[] = "bitcoin";
 	int		n;
 
-	n = 2;
+	n = 3;
+	printf("%s\n", str);
 	ft_bzero(str +2, n);
 	printf("%s\n", str);
 	bzero(str + 2, n);
 	printf("%s\n", str);
-}*/
+} */

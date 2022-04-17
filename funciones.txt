@@ -1,13 +1,13 @@
-•x isalpha
-•x isdigit
-•x isalnum
-•x isascii
-•x isprint
-•x strlen
-•z memset
-•z bzero
-•x memcpy
-•x memmove
+•x isalpha - retorna 1 si es un caracter alfabetico
+•x isdigit - retorna 1 si es un caracter numerico '8'
+•x isalnum - retorna 1 si es un caracter alfanumerico
+•x isascii - retorna 1 si es un caracter ascii de control e imprimible
+•x isprint - retorna 1 si es un caracter ascii imprimible
+•x strlen - retorna el # de caracteres de un string
+•z memset - reemplaza los caracteres del string por el indicado como 'c', en # de caracteres indicado en 'len'. Retorna un nuevo string.
+•z bzero - reemplaza los caracteres del string por caracteres NULL en n caracteres
+•x memcpy - reemplaza caracteres x caracter del string Destino con los caracteres del source en n caracteres. Retorna el string destino modificado.
+•x memmove - 
 •x strlcpy
 •x strlcat
 •x toupper
