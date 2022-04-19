@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 12:01:32 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/11 12:00:04 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 15:43:16 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	int		n;
 	int		res;
 
-	n = 6;
+	n = 5;
 	printf("%s | %s\n", dst, src);
 	res = ft_strlcat(dst, src, n);
 	//res = strlcat(dst, src, n);

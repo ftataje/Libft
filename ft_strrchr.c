@@ -6,39 +6,33 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 10:54:43 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:09:33 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 17:20:57 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
-size_t	ft_strlen(const char *str);
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*ptr;
+	int			i;
+	const char	*end;
 
-	i = 0;
-	ptr = 0;
-	while (s[i])
-	{
-		if (s[i] == c)
-			ptr = (char *)(s + i);
-		i++;
-	}
-	if (s[i] == c)
-		ptr = (char *)(s + i);
-	return (ptr);
+	i = ft_strlen(s);
+	end = s;
+	s = (s + i);
+	while (*s != *end && (char)c != *s)
+		s--;
+	if ((char)c == *s)
+		return ((char *)s);
+	return (0);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	a[] = "HolaHolaXX";
 	char	*b	= NULL;
 
-	b = ft_strrchr(a, '+');
+	b = ft_strrchr(a, 'a');
 	printf("%s || %s", a, b);
 	return (0);
-}*/
+} */

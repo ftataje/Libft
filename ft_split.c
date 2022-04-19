@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 12:27:32 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/05 13:57:24 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:21:52 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static size_t	count_words(char const *s, char c)
 
 	i = 0;
 	count = 0;
-	while (s[i] != '\0')
+	while (!s[i])
 	{
 		while (s[i] == c)
 			i++;
@@ -59,14 +59,14 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-/*int	main(void)
+int	main(void)
 {
-	char	a[] = "abcdiefgh";
+	char	a[] = "\0aa\0bbb";
 
-	printf("%c\n", *ft_split(a, 'i')[0]);
-	printf("%c\n", *ft_split(a, 'i')[1]);
+	printf("%c\n", *ft_split(a, "\0")[0]);
+	printf("%c\n", *ft_split(a, "\0")[1]);
 	return (0);
-}*/
+}
 
 /*El count_words retorna el numero de partes que se puede dividir
 el string entre el caracter indicado como 'c'*/

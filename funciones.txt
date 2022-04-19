@@ -6,16 +6,16 @@
 •x strlen - retorna el # de caracteres de un string
 •z memset - reemplaza los caracteres del string por el indicado como 'c', en # de caracteres indicado en 'len'. Retorna un nuevo string.
 •z bzero - reemplaza los caracteres del string por caracteres NULL en n caracteres
-•x memcpy - reemplaza caracteres x caracter del string Destino con los caracteres del source en n caracteres. Retorna el string destino modificado.
-•x memmove - 
-•x strlcpy
-•x strlcat
-•x toupper
-•x tolower
-•x strchr
-•x strrchr
-•x strncmp
-•x memchr
+•x memcpy - reemplaza caracter x caracter del string Destino con los caracteres del source en n caracteres. Retorna el string destino modificado.
+•x memmove - los mismo que el memcpy solo que el memcpy no funciona si el Dest y Src tomam el mismo string y el dest esta despues del src
+•x strlcpy - Sobreescribe el String2 en el String1 en 'n' caracteres. Retorna el largo del String2.
+•x strlcat - Si n <= len(DEST) ==> Los strings se mantienen y retorna el numero de caracteres del SRC + n || Si n > len(DEST) la funcion original da ERROR, y la funcion creada concatena los strings hasta tener los n-1 caracteres, retorna el len(DEST + SRC)
+•x toupper - convierte UNA letra de minuscula a mayuscula
+•x tolower - convierte UNA letra de mayuscula a minuscula
+•x strchr - Retorna el string desde el Primer caracter que coincide con el caracter indicado
+•x strrchr - Retorna el string desde el Ultimo caracter que coincide con el caracter indicado
+•x strncmp - Retorna la diferencia (segun el valor de la tabla ascii) entre el primer caracter diferente de 2 strings
+•x memchr -
 •x memcmp
 •x strnstr
 •x atoi
@@ -26,3 +26,14 @@
 https://github.com/nmanzini/42-libft
 https://github.com/appinha/42cursus-00-Libft/tree/master/subm0
 rm -r ~/Library/Caches/*; rm ~/.zcompdump
+
+memchr
+substr
+split
+
+memmove
+strlcpy
+split
+
+memchr
+substr

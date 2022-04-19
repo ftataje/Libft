@@ -6,13 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:01:36 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:22:11 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 17:06:36 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n);
 
@@ -23,7 +21,7 @@ void	*ft_calloc(size_t count, size_t size)
 	rtn = malloc(size * count);
 	if (!rtn)
 		return (NULL);
-	ft_bzero(rtn, count);
+	ft_memset(rtn, 0, count * size);
 	return (rtn);
 }
 

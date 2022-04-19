@@ -6,16 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:26:28 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:08:40 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:04:08 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

@@ -6,15 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 21:16:55 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:48:20 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 18:03:26 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -37,17 +33,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (srcsize);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	a[] = "Bitcoin";
-	char	b[] = "Ethereum";
+	char	b[] = "EthereumCardano";
 	int		n;
-	n = 10;
+
+	n = 20;
 	printf(":%s: || :%s:\n", a, b);
-	printf("%d\n", ft_strlcpy(a, b, n));
+	printf("%zu\n", ft_strlcpy(((void *)0), ((void *)0), 10));
+	printf("n = %d\n", n);
 	printf(":%s: || :%s:\n", a, b);
 	return (0);
-}*/
+} */
 
 /* Da el valor entero del tamaño del SRC, y el DEST toma
 los valores del SRC en n - 1 (porque considera el NULL de antemano)

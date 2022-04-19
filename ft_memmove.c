@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 15:50:33 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:58:09 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/19 16:28:45 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,27 +34,17 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	char	*a;
-	char	*b;
-
-	a = (char *)src;
-	b = (char *)dst;
-	while (n--)
-	{
-		*b++ = *a++;
-	}
-	return (dst);
-}
-
 /*int	main(void)
 {
-	char	str1[] = "Bitcoinabcdef";
-	char	str2[] = "Ethereum";
+	char	str1[] = "Bitcoin";
 
-	//ft_memmove(str1, str2, 3);
-	memmove(str1, str2, 3);
-	printf("%s\n", str1);
-	printf("%s\n", str2);
-}*/
+	printf("dest: %s\n", str1 + 2);
+	printf("src: %s\n", str1);
+	ft_memmove(str1 + 2, str1, 3);
+	//memcpy(str1, str2, 3);
+	printf("dest final: %s\n", str1);
+}
+
+//El memcopy no funciona cuando el dest y el src toman
+el mismo string y el dest va despues del src
+*/
