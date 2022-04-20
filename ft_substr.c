@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:26:28 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 18:04:08 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 10:21:47 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,25 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*str;
-	size_t	size;
+	char	*substr;
 
-	str = (char *)malloc(len + 1);
-	if (!s || !str)
-		return (0);
-	size = len;
-	if (len > ft_strlen(s) && start < ft_strlen(s))
-		size = ft_strlen(s) - start;
-	if (start > ft_strlen(s))
+	if (len > ft_strlen(s))
+		len = ft_strlen(s);
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s) || len <= 0)
 	{
-		str = (char *)malloc(1);
-		if (!str)
-			return (0);
-		str[0] = '\0';
-		return (str);
+		substr = (char *)malloc(1);
+		substr[0] = '\0';
+		return (substr);
 	}
-	ft_strlcpy(str, s + start, size + 1);
-	return (str);
+	if (len > ft_strlen(s) && start < ft_strlen(s))
+		len = ft_strlen(s) - start;
+	substr = malloc(sizeof(*s) * len + 1);
+	if (!substr)
+		return (NULL);
+	ft_strlcpy(substr, s + start, len + 1);
+	return (substr);
 }
 
 /*int	main(void)

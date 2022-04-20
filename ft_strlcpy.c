@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 21:16:55 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 18:03:26 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 10:09:59 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	srcsize;
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
 	srcsize = ft_strlen(src);
 	i = 0;
 	if (dstsize != 0)
