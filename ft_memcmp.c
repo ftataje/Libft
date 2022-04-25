@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 17:44:17 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 15:45:37 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:33:46 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "Bitcoin";
-	char	str2[] = "Ethereum";
+	char	str2[] = "BitEthereum";
 	int		res;
 
-	res = ft_memcmp(str1, str2, 3);
+	res = ft_memcmp(str1, str2, 5);
 	printf("%d", res);
-}*/
+} */

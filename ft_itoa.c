@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:29:13 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/12 15:51:23 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:29:42 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ char	*ft_itoa(int n)
 	return (dest);
 }
 
-/* int	main(void)
+/* int	main(void) POR CORREGIR EL MAIN
 {
 	int	n;
 	int	start;

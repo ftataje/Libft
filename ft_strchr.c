@@ -6,12 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 10:27:17 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:23:26 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:27 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

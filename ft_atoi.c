@@ -6,14 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 13:26:04 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:21:16 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:36:32 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -38,7 +35,7 @@ int	ft_atoi(const char *str)
 	return (res * sign);
 }
 
-/*int	main(int ac, char **av)
+/* int	main(int ac, char **av)
 {
 	int	mine;
 	int	theirs;
@@ -50,4 +47,4 @@ int	ft_atoi(const char *str)
 		printf("mine: %d | theirs: %d\n", mine, theirs);
 	}
 	return (0);
-}*/
+} */

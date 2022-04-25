@@ -6,13 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 12:52:29 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:20:50 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:39:06 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
@@ -39,14 +37,14 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	return (0);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "01: one 02: two 03: three";
 	char	str2[] = "02";
 	int		n;
 
-	n = 15;
+	n = 4;
 	printf("%s | %s\n", str1, str2);
 	printf("%s\n", ft_strnstr(str1, str2, n));
 	//printf("%s\n", strnstr(str1, str2, n));
-}*/
+} */

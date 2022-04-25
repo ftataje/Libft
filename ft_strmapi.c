@@ -6,15 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:29:40 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/11 12:02:45 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:59 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

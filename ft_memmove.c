@@ -6,14 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 15:50:33 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 16:28:45 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:08 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
-void	*ft_memcpy(void *dst, const void *src, size_t n);
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

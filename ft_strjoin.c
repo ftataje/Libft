@@ -6,16 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:25:39 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:24:52 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:44 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -6,12 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 13:33:44 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:37:44 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:14 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t len)
 {

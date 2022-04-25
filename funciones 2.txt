@@ -1,28 +1,26 @@
-·ft_calloc
-·ft_strdup
 
-·ft_substr
-·ft_strjoin
-·ft_strtrim
-·ft_split
-·ft_itoa
-·ft_strmapi
-·ft_striteri
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
+·ft_substr - En una NUEVA VARIABLE se imprime en "len" caracteres desde "start" en la string indicada
+·ft_strjoin - En una NUEVA VARIABLE se concatena los strings
+·ft_strtrim - Elimina los caracteres del string2 en el String1 si y solo si se encuentran a los lados del string1
+·ft_split - Divide el string en (n+1)strings dependiendo de cuantas veces(n) se encuentra el caracter indicado y los retorna
+·ft_itoa - 
+·ft_strmapi - Aplica a cada caracter del string la funcion indicada para un caracter. Ejm pasar a mayuscula/minuscula
+·ft_striteri - Aplica al string la funcion indicada para un string
+ft_putchar_fd - Imprime una letra en el archivo indicado (puede ser en un txt)
+ft_putstr_fd - Imprime un string en el archivo indicado (puede ser en un txt)
+ft_putendl_fd - Imprime un string y un salto de linea en el archivo indicado (puede ser en un txt)
+ft_putnbr_fd - Imprime un numero entero positivo o negativo en el archivo indicado (puede ser en un txt)
 
 bonus
-ft_lstnew
-ft_lstadd_front
-ft_lstsize
-ft_lstlast
-ft_lstadd_back
-ft_lstdelone
-ft_lstclear
-ft_lstiter
-ft_lstmap
+ft_lstnew -
+ft_lstadd_front -
+ft_lstsize -
+ft_lstlast -
+ft_lstadd_back -
+ft_lstdelone -
+ft_lstclear -
+ft_lstiter -
+ft_lstmap -
 
 rm -r ~/Library/Caches/*; rm ~/.zcompdump
 df -h

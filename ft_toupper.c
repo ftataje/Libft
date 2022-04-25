@@ -6,12 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:28:49 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:47:51 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:39:43 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

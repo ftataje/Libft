@@ -6,12 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:44:12 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 13:47:00 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:39:40 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

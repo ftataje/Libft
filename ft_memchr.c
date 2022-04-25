@@ -6,12 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 16:50:38 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 17:40:19 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:37:04 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -32,7 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	char	str1[] = "Bitcoinnnnnnnn";
 	char	*str2;
 
-	str2 = ft_memchr(str1, 2 + 256, 3);
+	str2 = ft_memchr(str1, 't', 5);
 	printf("%s || %s\n", str1, str2);
 	printf("<%c>", 2 + 256);
 	return (0);

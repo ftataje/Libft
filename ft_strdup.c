@@ -6,13 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:24:01 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 12:44:19 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:38:31 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str);
 
@@ -33,7 +31,7 @@ char	*ft_strdup(char *src)
 	return (new);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	*mine;
 	char	*theirs;
@@ -44,6 +42,6 @@ char	*ft_strdup(char *src)
 	theirs = strdup(example);
 	printf(":%s:\n:%s:\n", mine, theirs);
 	return (0);
-}*/
+} */
 
 //en una nueva variable retorna el mismo string

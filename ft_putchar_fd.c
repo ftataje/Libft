@@ -6,7 +6,7 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:37:41 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 16:59:00 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 13:11:00 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-/* int	main(void)
-{
-	char	c;
-	int		fd;
+/* #include <fcntl.h>
 
-	c = 'M';
-	fd = 1;
-	ft_putchar_fd(c, fd);
+int	main(void)
+{
+	int	fd;
+
+	fd = open("prueba.txt", O_RDWR | O_CREAT);
+	ft_putchar_fd('J', fd);
+	return (0);
 } */

@@ -6,16 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 11:27:04 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/04 16:21:21 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 12:39:19 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-size_t	ft_strlen(const char *s);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strchr(const char *s, int c);
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -32,7 +27,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, 0, i + 1));
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	a[] = "niBitcoin";
 	char	b[] = "ni";
@@ -41,4 +36,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res = ft_strtrim(a, b);
 	printf("%s", res);
 	return (0);
-}*/
+} */

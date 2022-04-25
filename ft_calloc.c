@@ -6,13 +6,11 @@
 /*   By: ftataje- <ftataje-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 15:01:36 by ftataje-          #+#    #+#             */
-/*   Updated: 2022/04/19 17:06:36 by ftataje-         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:54:43 by ftataje-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_bzero(void *s, size_t n);
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -25,7 +23,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (rtn);
 }
 
-/*void	imprimirvector(int v[], int n)
+/* void	imprimirvector(int v[], int n)
 {
 	int	i;
 
@@ -49,4 +47,4 @@ int	main(void)
 	imprimirvector(p, n);
 	q = ft_calloc(n, sizeof(int));
 	imprimirvector(q, n);
-}*/
+} */
