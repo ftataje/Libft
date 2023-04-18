@@ -3,7 +3,7 @@
 ·ft_strjoin - En una NUEVA VARIABLE se concatena los strings
 ·ft_strtrim - Elimina los caracteres del string2 en el String1 si y solo si se encuentran a los lados del string1
 ·ft_split - Divide el string en (n+1)strings dependiendo de cuantas veces(n) se encuentra el caracter indicado y los retorna
-·ft_itoa -
+·ft_itoa - convirte cada dígito de un entero en caracteres
 ·ft_strmapi - Aplica a cada caracter del string la funcion indicada para un caracter. Ejm pasar a mayuscula/minuscula
 ·ft_striteri - Aplica al string la funcion indicada para un string
 ft_putchar_fd - Imprime una letra en el archivo indicado (puede ser en un txt)
